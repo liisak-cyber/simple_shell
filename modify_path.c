@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.hi>
 
 /**
  * retrieve_executable_path - finds the executable path from the global environment

@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.hi>
 
 /**
  * user_prompt - prints $ to let the user know the program is

@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.hi>
 
 /**
  * display_environment_info - prints the environment string to stdout

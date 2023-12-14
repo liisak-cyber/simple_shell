@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.hi>
 
 /**
  * execute_command - executes commands entered by users

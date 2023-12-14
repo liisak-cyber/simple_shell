@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.hi>
 
 /**
  * validate_path - checks whether path is valid

@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.h>
 
 /**
  * handle_exit_command - handles the exit command

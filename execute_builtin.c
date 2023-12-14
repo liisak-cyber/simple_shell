@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.h>
 
 /**
  * execute_builtin - executes builtin functions

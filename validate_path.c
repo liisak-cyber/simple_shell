@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.h>
 
 /**
 * run_custom_shell - carries out the read, execute then print output loop

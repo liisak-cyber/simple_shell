@@ -1,4 +1,5 @@
 #include "custom_shell.h"
+#include <signal.hi>
 
 /**
  * handle_interrupt_signal - keeps track if in interactive mode
