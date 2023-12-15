@@ -1,20 +1,18 @@
-#include "custom_shell.h"
-#include <signal.hi>
-
+#include "shell.h"
 /**
- * check_builtin - checks whether it's a built-in function
- * @cmd: tokenized user input
- * @buf: line derived from the getline function
- * Return: 1 if cmd executed, 0 if cmd is not executed
+ *checker- checks to see weather its a built in function
+ *@cmd: tokenized user input
+ *@buf: line drived fromgetline function
+ *Return: 1 if cmd excuted 0 if cmd is not executed
  */
-int check_builtin(char **cmd, char *buf)
+int checker(char **cmd, char *buf)
 {
-    if (execute_builtin(cmd, buf))
-        return (1);
-    else if (**cmd == '/')
-    {
-        execute_program(cmd[0], cmd);
-        return (1);
-    }
-    return (0);
+	if (handle_builtin(cmd, buf))
+		return (1);
+	else if (**cmd == '/')
+	{
+		execution(cmd[0], cmd);
+		return (1);
+	}
+	return (0);
 }
